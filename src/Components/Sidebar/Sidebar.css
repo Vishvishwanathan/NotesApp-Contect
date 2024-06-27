@@ -1,0 +1,69 @@
+.sidebar{
+
+    height: 800px;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    background-color: white;
+
+    > .profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 35px;
+        > .credentials{
+            padding-left: 10px;
+            > #name {
+                color: #203562;
+                font-size: 24px;
+                margin: 0;
+                margin-bottom: 0.2rem;
+            }
+            > #email{
+                margin: 0;
+                font-size: 13px;
+                color: #203562;
+            }
+        }
+    }
+
+    > ul {
+        gap: 18px;
+        margin-top: 30px;
+
+        > li {
+            display: flex;
+            justify-content: flex-start;
+            align-content: center;
+            align-items: center;
+            border-radius: 5px;
+            padding: 8px 16px;
+            color: white;
+            cursor: pointer;
+            >i{
+                color: #203562;
+            }
+
+            > a {
+                padding-left: 12px;
+                width: 170px;
+                text-decoration: none;
+                color: #203562;
+            }
+        }
+
+        > .active {
+            background-color: #203562;
+            >i{
+                color: white;
+            }
+            >a{
+                color: white;
+            }
+        }
+    }
+}
+
+Link{
+    text-decoration: none;
+}

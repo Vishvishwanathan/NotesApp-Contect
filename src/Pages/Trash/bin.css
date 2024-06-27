@@ -1,0 +1,43 @@
+.trash{
+    width: 850px;
+    margin: 10px;
+    height: 780px;
+    background-color: antiquewhite;
+    display: grid;
+    border-radius: 8px;
+    grid-auto-flow: column;
+    overflow-y: scroll;
+    gap: 10px;
+    >.bin{
+        >.row {
+            width: 860px;
+            padding: 8px;
+            row-gap: 10px;   
+        }
+    }
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+.col-4 {
+    >.trash-card {
+        width: 250px;
+        height: 280px;
+        border-radius: 12px;
+        padding: 8px 12px;
+        background-color: #197374;
+        color: white;
+        >#trash-head{
+            font-weight: 500;
+            text-align: center;
+        }
+        >#trash-content{
+            height: 230px;
+            overflow: scroll;
+            text-align: justify;
+        }
+    }
+
+}

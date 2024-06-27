@@ -1,0 +1,78 @@
+.notes-container{
+    margin: 12px;
+    padding-top: 16px;
+    width: calc(100% - 39px);
+
+    >.note-input{
+        padding: 20px;
+        border-radius: 16px;
+        opacity: 0.8;
+        background: var(--Secondary, #F5F5F5);
+        box-shadow: 2px 4px 16px 0px rgba(32, 53, 98, 0.47);
+        >#note-head{
+            color: #203562;
+        }
+        >.note{
+            display: flex;
+            flex-direction: column;
+            >input{
+                border: none;
+                outline: none;
+                background: none;
+                padding-top: 20px;
+            }
+            >input::placeholder{
+                font-size: 20px;
+                font-weight: 500;
+                color: #203562;
+            }
+            >textarea{
+                border: none;
+                outline: none;
+                background: none;
+                padding-top: 16px;
+                resize: none;
+                height: 150px;
+            }
+            >textarea::placeholder{
+                color: #203562;
+                font-weight: 500;
+                font-size: 16px;
+            }
+            >.date{
+                padding: 16px 0 0 16px;
+                display: flex;
+                align-items: center;
+                align-content: center;
+                >i{
+                    font-size: 24px;
+                    color: #203562;
+                }
+                >p{
+                    color: #203562;
+                    margin: 0;
+                    font-weight: 500;
+                    padding-left: 10px;
+                }
+            }
+        }
+
+        > .btn-right {
+            padding-top: 16px;
+            text-align: right;
+            margin-right: 40px;
+            >button{
+                border: 3px solid black;
+                font-size: 20px;
+                padding: 8px 16px;
+                border-radius: 75px;
+                font-weight: 600;
+                color: white;
+                background-color: #197374;
+            }
+            >button:hover{
+                background-color: #0a8789;
+            }
+        }
+    }
+}

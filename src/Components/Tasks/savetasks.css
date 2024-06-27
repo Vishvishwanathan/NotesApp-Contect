@@ -1,0 +1,32 @@
+.task{
+    margin: 12px;
+    width: calc(100% - 39px);
+    >.my-tasks{
+        >.task-head{
+            display: flex;
+            align-items: center;
+            >h5{
+                margin-bottom: 0;
+                padding-left: 10px;
+                color: #203562;
+                font-weight: 700;
+            }
+            >i{
+                color: #203562;
+            }
+        }
+    }
+    >.tasks{
+        height: 300px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 2px 4px 12px 0px rgba(62, 88, 143, 0.37);
+        padding: 24px 16px;
+        margin-top: 16px;
+        overflow: auto;
+            
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }    
+}
